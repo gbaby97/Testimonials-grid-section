@@ -1,0 +1,212 @@
+.daniel-pic, .patrick-pic, 
+.jean-pic, .kira-pic, .jonathan-pic{
+  margin-top: 25px;
+  width: 40px;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+.jean-name, .kira-name,
+.daniel-name, .patrick-name,
+.jonathan-name{
+  display: inline-block;
+  width: 115px;
+  height: 30px;
+  font-size: 1rem;
+  margin-top: 25px;
+}
+.dan-1, .jean-1, .kira-1,
+.patrick-1, .jonathan-1{
+  margin-left: 30px;
+  line-height: 22px;
+  font-size: 1.1rem;
+  z-index: 1;
+  height: 70px;
+}
+.dan-quote, .jean-quote, .kira-quote,
+.patrick-quote, .jonathan-quote{
+  font-size: .75rem;
+  line-height: 18px;
+  margin-right: 30px;
+  margin: 0 30px 0 30px;
+}
+.daniel-container{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: 
+  "    dpic     dname     quot     "
+  "    dan     dan      dan     "
+  "    dan-q     dan-q      dan-q     "
+  ;
+}
+.daniel-pic{
+  border:solid 2px rgba(255, 255, 255, 0.345);
+  grid-area: dpic;
+}
+.daniel-name{
+  margin-left: -70px;
+  color: white;
+  grid-area: dname;
+}
+.grad{
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.50);
+}
+.quotation{
+  width: 120px;
+  grid-area: quot;
+}
+.dan-1{
+  grid-area: dan;
+  color: white;
+  margin-top: -30px;
+  margin-right: 30px;
+}
+.dan-quote{
+  grid-area: dan-q;
+  color: rgba(255, 255, 255, 0.502);
+  width: 440px;
+  height: 100px;
+  margin-top: -35px;
+}
+.jonathan-container{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: 
+  "     jpic     jname     "
+  "     j1     j1     "
+  "     jon-q     jon-q     "
+  ;
+}
+.jonathan-pic{
+  border:solid 2px rgba(255, 255, 255, 0.345);
+  grid-area: jpic;
+}
+.jonathan-name{
+  grid-area: jname;
+  margin-left: -30px;
+  color: white;
+}
+.jonathan-1{
+  grid-area: j1;
+  color: white;
+  margin-top: -10px;
+  margin-right: 30px;
+}
+.jonathan-quote{
+  grid-area: jon-q;
+  color: rgba(255, 255, 255, 0.502);
+  width: 170px;
+  height: 100px;
+  margin-top: -30px;
+}
+.kira-container{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: 
+  "     kpic     kname     "
+  "     k1     k1     "
+  "     kira-q     kira-q     "
+  ;
+}
+.kira-pic{
+  grid-area: kpic;
+  border:solid 2px rgba(255, 255, 255, 0.345);
+}
+.kira-name{
+  grid-area: kname;
+  margin-left: -30px;
+  color: rgb(94, 99, 113);
+}
+.k-grad{
+  font-size: .8rem;
+  color: rgba(78, 78, 78, 0.5);
+}
+.kira-1{
+  grid-area: k1;
+  color: rgb(94, 99, 113);
+  margin-left: 30px;
+  margin-top: -115px;
+  margin-right: 30px;
+}
+.kira-quote{
+  grid-area: kira-q;
+  color: rgba(94, 99, 113, 0.7);
+  width: 180px;
+  height: 400px;
+  margin-top: -220px;
+}
+.jean-container{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: 
+  "     jpic     jeanname     "
+  "     jean1     jean1     "
+  "     jeanq     jeanq     "
+  ;
+}
+.jean-pic{
+  grid-area: jpic;
+  border:solid 2px rgba(255, 255, 255, 0.345);
+}
+.jean-name{
+  grid-area: jeanname;
+  margin-left: -30px;
+  color: rgb(94, 99, 113);
+}
+.jean-grad{
+  font-size: .8rem;
+  color: rgba(78, 78, 78, 0.5);
+}
+.jean-1{
+  grid-area: jean1;
+  color: rgb(94, 99, 113);
+  margin-top: -10px;
+  margin-right: 30px;
+  width: 150px;
+}
+.jean-quote{
+  grid-area: jeanq;
+  color: rgba(94, 99, 113, 0.7);
+  width: 170px;
+  height: 100px;
+  margin-top: -20px;
+}
+.patrick-container{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: 
+  "     ppic     pname     "
+  "     p1     p1     "
+  "     pq     pq     "
+  ;
+}
+.patrick-pic{
+  border:solid 2px rgb(112, 67, 189);
+  grid-area: ppic;
+}
+.patrick-name{
+  grid-area: pname;
+  margin-left: -145px;
+  color: white;
+}
+.patrick-1{
+  grid-area: p1;
+  color: white;
+  margin-top: -10px;
+  margin-right: 30px;
+}
+.patrick-quote{
+  grid-area: pq;
+  color: rgba(255, 255, 255, 0.502);
+  width: 440px;
+  height: 100px;
+  margin-top: -15px;
+}
+.signature, .attribution{
+  font-size: .7rem;
+}
